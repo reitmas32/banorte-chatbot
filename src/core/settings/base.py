@@ -32,6 +32,8 @@ class Settings(PydanticBaseSettings):
     # ----------------------------------------------------------------
     TELEGRAM_KEY: str
     TAVILY_API_KEY: str
+    FIREBASE_URL: str
+    OPENAI_API_KEY: str
 
     # Project Constants
     # ----------------------------------------------------------------
