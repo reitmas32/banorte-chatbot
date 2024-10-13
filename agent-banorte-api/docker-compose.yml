@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.deploy
+    image: assistent-api
+    container_name: assistent-api
+    ports:
+      - "9000:9000"
+    env_file:
+      - envs/.env.local
+    environment:
+      - ENVIRONMENT=local
+    volumes:
+      - .:/application

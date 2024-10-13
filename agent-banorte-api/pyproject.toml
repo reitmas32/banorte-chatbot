@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "asistent-api"
+version = "0.1.0"
+description = ""
+authors = ["ronihdzz <ronaldo.runing_@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.2"
+uvicorn = "^0.31.1"
+firebase = "^4.0.1"
+python-dotenv = "^1.0.1"
+loguru = "^0.7.2"
+pydantic-settings = "^2.5.2"
+python-telegram-bot = "^21.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
